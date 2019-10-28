@@ -16,11 +16,11 @@ Saya ajukan pertanyaan ini kepada anggota lain (dibaca: culikan) dan mereka sang
 ### Susunan Para Guru dan Karyawan
 <div class="box">
   <p>
-  - <b>kresbayyy</b> (<i>atau ShuuShu</i>): Kepala Sekolah
-  - <b>Serenium</b>: Wakil Kepala Sekolah dan Pengawas
-  - <b>N4O</b>: Guru Seni Budaya dan TIK
-  - <b>naru</b>: Guru Bahasa
-  - <b>Akaise</b>: Guru Bahasa
+  - <b>kresbayyy</b> (<i>atau ShuuShu</i>): Kepala Sekolah<br/>
+  - <b>Serenium</b>: Wakil Kepala Sekolah dan Pengawas<br/>
+  - <b>N4O</b>: Guru Seni Budaya dan TIK<br/>
+  - <b>naru</b>: Guru Bahasa<br/>
+  - <b>Akaise</b>: Guru Bahasa<br/>
   - <b>Jembutlurus</b>: Penjaga Kantin dan Pembersih Kamar Mandi Sekolah
   </p>
 </div>
