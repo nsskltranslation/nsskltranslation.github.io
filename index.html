@@ -17,45 +17,46 @@ description: Ngemanga Suka-Suka Kami, Lah!
 
 				<!-- Intro -->
 					<div id="intro">
-            <h1>{{site.title}}</h1>
+            			<h1>{{site.title}}</h1>
 						<h2>{{site.description}}</h2>
 						<ul class="actions">
 							<li><a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
 						</ul>
 					</div>
 
-				<!-- Header -->
+					<!-- Header -->
 					<header id="header">
 						<a href="{{ "/" | absolute_url }}" class="logo">{{site.title}}_{{site.subdivisi}}</a>
 					</header>
 
-				<!-- Nav -->
+					<!-- Nav -->
 					<nav id="nav">
 
             {% include nav.html %}
 
 					</nav>
 
-				<!-- Main -->
+
+					<!-- Main -->
 					<div id="main">
-						<section class="posts">
-							{% for post in site.posts limit:3 %}
-							{% assign mod3 = forloop.index | modulo: 3 %}
-								<article>
-									<header>
-										<span class="date">{{ post.date | date_to_string }}</span>
-										<h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
-									</header>
-									<a href="{{ post.url | absolute_url }}" class="image fit"><img src="{{ post.image | absolute_url }}" alt="" /></a>
-									<p>{{ post.excerpt }}</p>
-									<ul class="actions">
-										<li><a href="{{ post.url | absolute_url }}" class="button">Baca</a></li>
-									</ul>
-								</article>
-							{% endfor %}
-			
+							<!-- Posts -->
+							<section class="posts">
+									{% for post in site.posts limit:3 %}
+									{% assign mod3 = forloop.index | modulo: 3 %}
+									<article>
+										<header>
+											<span class="date">{{ post.date | date_to_string }}</span>
+											<h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
+										</header>
+										<a href="{{ post.url | absolute_url }}" class="image fit"><img src="{{ post.image | absolute_url }}" alt="" /></a>
+										<p>{{ post.excerpt }}</p>
+										<ul class="actions">
+											<li><a href="{{ post.url | absolute_url }}" class="button">Baca</a></li>
+										</ul>
+									</article>
+								{% endfor %}
 							</section>
-					</div>
+						</div>
 
 				<!-- Footer -->
         {% include foot.html %}

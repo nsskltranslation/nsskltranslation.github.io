@@ -1,10 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-  Jekyll integration by somiibo.com
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
     {% include head.html %}
@@ -31,11 +25,30 @@
           <section class="post">
     				<header class="major">
       				<span class="date">{{page.date | date_to_string}}</span>
-      				<h1>{{page.title}}</h1>
-      				<p>{{page.excerpt}}</p>
+      				<h2>{{page.title}}</h2>
       			</header>
       			<div class="image main"><img src="{{page.image}}" alt=""></div>
-      			<p>{{content}}</p>
+            <p>{{content}}</p>
+            
+            <table style="text-align: center !important; vertical-align: middle;">
+              <tr>
+                <th><h3>Baca</h3></th>
+              </tr>
+              {%- for down in page.down_links -%}
+              <tr>
+                <th>
+                  
+                  <h4>
+                    {%- if down.link -%}
+                    <a href="{{ down.link }}">{{ down.text }}</a>
+                    {%- else -%}
+                    <a aria-disabled="true">{{ down.text }}</a>
+                    {%- endif -%}
+                  </h4>
+              </th>
+              {% endfor %}
+              </tr>
+            </table>
       		</section>
 
           <div class="comments-wrapper">

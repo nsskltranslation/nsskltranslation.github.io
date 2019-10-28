@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+    {% include head.html %}
+	</head>
+	<body class="is-loading">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Header -->
+				<header id="header">
+					<a href="{{ "/" | absolute_url }}" class="logo">{{site.title}}_{{site.subdivisi}}</a>
+				</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+
+            {% include nav.html %}
+
+					</nav>
+
+				<!-- Main -->
+				<div id="main">
+                    {% if page.list_garapan %}
+                    <h2>Daftar Garapan</h2>
+                    {% else %}
+                    <h2>{{ page.title }}</h2>
+                    <p class="garapan-info">{% if page.sinopsis %}{{ page.sinopsis }}{% else %}-{% endif %}</p>
+                    <p class="garapan-info bottomest"><b>MangaDex</b>: <a href="https://mangadex.org/title/{{ page.mangadex_id }}">https://mangadex.org/title/{{ page.mangadex_id }}</a></p>
+                    {% endif %}
+					<!-- Post -->
+					<section class="posts">
+                        {% if page.list_garapan %}
+                        {% for garap in page.list_garapan %}
+                        <article>
+                            {%- capture word_ %}{{ page.list_garapanfull[forloop.index0] | strip_newlines }}{%- endcapture -%}
+                            <header>
+                                <h2><a href="/garapan/{{ garap }}">{{ word_ }}</a></h2>
+                                <span class="date">{{ page.list_garapanfullori[forloop.index0] }}</span>
+                            </header>
+                            <a href="/garapan/{{ garap }}" class="image fit"><img src="{{ page.list_garapangambar[forloop.index0] }}" alt="" /></a>
+                            <ul class="actions">
+                                <li><a href="/garapan/{{ garap }}" class="button">Lihat</a></li>
+                            </ul>
+                        </article>
+                        {% endfor %}
+                        {% endif %}
+                    </section>
+                    {%- if page.custom_tags -%}
+                    <section class="posts">
+                        {% for post in site.posts limit:3 %}
+                        {% assign mod3 = forloop.index | modulo: 3 %}
+                        {% if post.tags contains page.custom_tags %}
+                        <article>
+                            <header>
+                                <span class="date">{{ post.date | date_to_string }}</span>
+                                <h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
+                            </header>
+                            <a href="{{ post.url | absolute_url }}" class="image fit"><img src="{{ post.image | absolute_url }}" alt="" /></a>
+                            <p>{{ post.excerpt }}</p>
+                            <ul class="actions">
+                                <li><a href="{{ post.url | absolute_url }}" class="button">Baca</a></li>
+                            </ul>
+                        </article>
+                        {% endif %}
+                        {% endfor %}
+                    </section>
+                    {%- endif -%}
+					
+
+				<!-- Footer -->
+        {% include foot.html %}
+
+			</div>
+
+			<!-- Scripts -->
+			{% include scripts-main.html %}
+			{% include tracking.html %}
+
+	</body>
+</html>
