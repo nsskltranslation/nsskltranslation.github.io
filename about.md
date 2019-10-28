@@ -17,11 +17,22 @@ Saya ajukan pertanyaan ini kepada anggota lain (dibaca: culikan) dan mereka sang
 <div class="box">
   <p>
   - <b>kresbayyy</b> (<i>atau ShuuShu</i>): Kepala Sekolah<br/>
+    Motto: <i>Menyebut Fumei itu haram hukumnya.</i><br/>
+
   - <b>Serenium</b>: Wakil Kepala Sekolah dan Pengawas<br/>
+    Motto: <i>Tolong, aku diculik.</i><br/>
+
   - <b>N4O</b>: Guru Seni Budaya dan TIK<br/>
+     Motto: <i>Saya hidup hanya untuk ngememe di berbagai fansub dan entah kenapa saya bisa di sini.</i><br/>
+
   - <b>naru</b>: Guru Bahasa<br/>
+    Motto: <i>Bikin ginian, ketahuan nolep dan kebelet ngememe.</i><br/>
+
   - <b>Akaise</b>: Guru Bahasa<br/>
+    Motto: <i>Saya menyesal telah ngesub.</i><br/>
+  
   - <b>Jembutlurus</b>: Penjaga Kantin dan Pembersih Kamar Mandi Sekolah
+    Motto: <i>Sanggama adalah kebutuhan, bersanggama lah sebelum terlambat.</i><br/>
   </p>
 </div>
 
