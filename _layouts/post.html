@@ -34,21 +34,29 @@
               <tr>
                 <th><h3>Baca</h3></th>
               </tr>
-              {%- for down in page.down_links -%}
+              {%- for read in page.read_links -%}
               <tr>
                 <th>
-                  
                   <h4>
-                    {%- if down.link -%}
-                    <a href="{{ down.link }}">{{ down.text }}</a>
+                    {%- if read.link -%}
+                    <a href="{{ read.link }}">{{ read.text }}</a>
                     {%- else -%}
-                    <a aria-disabled="true">{{ down.text }}</a>
+                    <a aria-disabled="true">{{ read.text }}</a>
                     {%- endif -%}
                   </h4>
               </th>
-              {% endfor %}
               </tr>
+              {% endfor %}
             </table>
+            {%- if page.down_link -%}
+            {%- if page.down_link | strip != "" -%}
+            <button class="neat-btn neat-btn-5 neat-btn-5a icon fa fa-download" onclick="window.location.href='{{ page.down_link }}'"><span>Unduh</span></button>
+            {% else %}
+            <button class="neat-btn neat-btn-5 neat-btn-5a icon fa fa-download" disabled><span>Tidak bisa diunduh</span></button>
+            {% endif %}
+            {% else %}
+            <button class="neat-btn neat-btn-5 neat-btn-5a icon fa fa-download" disabled><span>Tidak bisa diunduh</span></button>
+            {%- endif -%}
       		</section>
 
           <div class="comments-wrapper">
