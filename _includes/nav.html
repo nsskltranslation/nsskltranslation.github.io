@@ -1,0 +1,12 @@
+<ul class="links">
+  <li class="{% if page.url == "/" %} active {% endif %}"><a href="{{ "/" | absolute_url }}">Home</a></li>
+  <li class="{% if page.url contains '/garapan/' %} active {% endif %}"><a href="{{ "/garapan/" | absolute_url }}">Garapan</a></li>
+  <li class><a href="{{ "https://anime.nerjemah.in" | absolute_url }}">Divisi Anime</a></li>
+  <li class="{% if page.url contains '/about/' %} active {% endif %}"><a href="{{ "/about/" | absolute_url }}">Tentang Kami</a></li>
+</ul>
+
+<ul class="icons">
+  <li><a href="https://mangadex.org/group/{{site.mangadex}}" class="icon fa-mangadex" rel="nofollow"><span class="label">MangaDex</span></a></li>
+  <li><a href="https://facebook.com/{{site.facebook}}" class="icon fa-facebook" rel="nofollow"><span class="label">Facebook</span></a></li>
+  <li><a href="https://discord.gg/{{site.discord}}" class="icon fa-discord" rel="nofollow"><span class="label">Discord</span></a></li>
+</ul>
