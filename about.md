@@ -31,7 +31,7 @@ Saya ajukan pertanyaan ini kepada anggota lain (dibaca: culikan) dan mereka sang
   - <b>Akaise</b>: Guru Bahasa<br/>
     Motto: <i>Saya menyesal telah ngesub.</i><br/>
   
-  - <b>Jembutlurus</b>: Penjaga Kantin dan Pembersih Kamar Mandi Sekolah
+  - <b>Jembutlurus</b>: Penjaga Kantin dan Pembersih Kamar Mandi Sekolah<br/>
     Motto: <i>Sanggama adalah kebutuhan, bersanggama lah sebelum terlambat.</i><br/>
   </p>
 </div>
