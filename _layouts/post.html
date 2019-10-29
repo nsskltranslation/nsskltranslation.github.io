@@ -49,8 +49,9 @@
               {% endfor %}
             </table>
             {%- if page.down_link -%}
-            {%- if page.down_link | strip != "" -%}
-            <button class="neat-btn neat-btn-5 neat-btn-5a icon fa fa-download" onclick="window.location.href='{{ page.down_link }}'"><span>Unduh</span></button>
+            {% capture down_ %}{{ page.down_link | strip }}{% endcapture %}
+            {%- if down_ != "" -%}
+            <button class="neat-btn neat-btn-5 neat-btn-5a icon fa fa-download" onclick="window.location.href='{{ page.down_link }}'" title="{{ down_ }}"><span>Unduh</span></button>
             {% else %}
             <button class="neat-btn neat-btn-5 neat-btn-5a icon fa fa-download" disabled><span>Tidak bisa diunduh</span></button>
             {% endif %}
